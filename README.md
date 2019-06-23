@@ -1,7 +1,7 @@
 # LDC1312-Arduino
 Arduino library for TI's LDC1312/1314 inductance-to-digital converters.
 
-This library has not been fully tested (yet). I have used most of the functions in my projects, but I can't guarantee that everything will work as it should.
+This library has not been fully tested (yet). I have used most of the functions in my projects, but I can't guarantee that everything will work as it should. I have *only* ever used this library with [Visual Studio Code](https://code.visualstudio.com/) using [PlatformIO](https://docs.platformio.org/en/latest/ide/vscode.html).
 
 This library is written specifically for the Teensy 3.5 Arduino board, but can probably be reused for other Arduino boards with minimal changes.
 
