@@ -5,6 +5,8 @@ This library has not been fully tested (yet). I have used most of the functions 
 
 This library is written specifically for the Teensy 3.5 Arduino board, but can probably be reused for other Arduino boards with minimal changes. The main compatibility issue with non-Teensy boards is this library's usage of [i2c_t3](https://github.com/nox771/i2c_t3). I might come back and make this library more friendly to other Arduino devices later (probably not).
 
+This library is set to only use Wire. Not Wire1, Wire2, etc. You can easily change this by adding '1', '2', etc to all instances of the word "Wire".
+
 This library works for both the LDC1312 and LDC1314 sensors - if you're using an LDC1312, just avoid using channels 2 and 3 because the LDC1312 doesn't have those.
 
 This library does not configure the Arduino's I2C functions for you. You will need to use something like:
