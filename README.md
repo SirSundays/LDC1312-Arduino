@@ -16,6 +16,4 @@ Wire.begin(I2C_MASTER, 0x00, I2C_PINS_18_19, I2C_PULLUP_EXT, 400000);
 
 Most of the channel-specific functions default to Channel 0 if they're given an invalid channel argument.
 
-Created by Darius Fieschko.
-
 LDC1312 datasheet: https://www.ti.com/lit/ds/symlink/ldc1312.pdf
