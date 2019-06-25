@@ -377,11 +377,7 @@ bool LDC_isHighCurrentDriveEnabled(uint16_t config_code);
 
 //------------------------------------------------------------------------------------------
 // Refer to Section [7.6.27 Address 0x1E, DRIVE_CURRENT0] in the LDC1312 datasheet.
-// This function does not set the full two bytes in this register, since all it cares about
-// is the IDRIVEx setting anyway. Only uses last 5 bits of drive_current (0-31). The 
-// remaining bits are set automatically by the device using auto-amplitude correction mode.
-// From the datasheet: (auto-amplitude correction must be disabled and RP override=1)
-// Sets the L-C Sensor Drive Current for the specified channel.
+// Sets the DRIVE_CURRENTx register via I2C.
 //------------------------------------------------------------------------------------------
 void LDC_setDriveCurrent(uint8_t address, int channel, uint16_t drive_current);
 

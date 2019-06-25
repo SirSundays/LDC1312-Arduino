@@ -773,9 +773,9 @@ void LDC_setDriveCurrent(uint8_t address, int channel, uint16_t drive_current)
             register_address = LDC_DRIVE_CURRENT0; //defaults to channel 0 on invalid argument
     };
 
-    drive_current = (drive_current << 11) & 0xF800; //shift left 11 bits and & w/ 1111 1000  0000 0000
     uint8_t byte1 = (drive_current >> 8) & 0xFF; //MSB
     uint8_t byte0 = drive_current & 0xFF; //LSB
+
     Wire.beginTransmission(address);
     Wire.write(register_address);
     Wire.write(byte1);
