@@ -40,8 +40,8 @@
 
 #define LDC_RCOUNT0           0x08 //default 0x08
 #define LDC_RCOUNT1           0x09 //default 0x08
-#define LDC_RCOUNT2           0x10 //default 0x08
-#define LDC_RCOUNT3           0x11 //default 0x08
+#define LDC_RCOUNT2           0x0A //default 0x08
+#define LDC_RCOUNT3           0x0B //default 0x08
 
 #define LDC_OFFSET0           0x0C //default 0x00
 #define LDC_OFFSET1           0x0D //default 0x00
