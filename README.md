@@ -13,4 +13,4 @@ Most of the channel-specific functions default to Channel 0 if they're given an 
 
 LDC1312 datasheet: https://www.ti.com/lit/ds/symlink/ldc1312.pdf
 
-A example will follow shortly.
+An overview with all the functions will follow shortly.
