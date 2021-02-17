@@ -24,11 +24,11 @@ class LDC131X {
 public:
 	LDC131X(bool addr);
 	//------------------------------------------------------------------------------------------
-// Sets the LDC to the settings recommended by the LDC1312 datasheet, section 8.2.5
-// This sets the LDC to the single-channel recommended settings for the specified channel.
-// [Table 44. Recommended Initial Register Configuration Values (Single-Channel Operation)]
-// Recommended to use resetLDC() and a small delay before calling this function.
-//------------------------------------------------------------------------------------------
+	// Sets the LDC to the settings recommended by the LDC1312 datasheet, section 8.2.5
+	// This sets the LDC to the single-channel recommended settings for the specified channel.
+	// [Table 44. Recommended Initial Register Configuration Values (Single-Channel Operation)]
+	// Recommended to use resetLDC() and a small delay before calling this function.
+	//------------------------------------------------------------------------------------------
 	void LDC_setRecommendedSettings(int channel);
 
 	//------------------------------------------------------------------------------------------
@@ -36,7 +36,7 @@ public:
 	// Not all registers are readable, and some registers are changed when they're read.
 	// Read the datasheet before using this function.
 	//------------------------------------------------------------------------------------------
-	uint16_t LDC_readRegister( uint8_t register_address);
+	uint16_t LDC_readRegister(uint8_t register_address);
 
 	//------------------------------------------------------------------------------------------
 	// Sets the contents of a register. There is no error checking or hand-holding.
